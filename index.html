@@ -10,23 +10,23 @@
   <div class="wrap">
     <section id="todayView">
       <header class="head">
-        <div class="tag">✨ 阿映的抽签筒｜J&C</div>
-        <h1>今天抽一张签</h1>
-        <p class="sub">状态、指令、奖励、晚上、禁止、亲密、听歌、猫猫和 DIY。抽到后可以重抽，也可以收下。只有收下的签才会进入记录。</p>
+        <div class="tag">✨ J&C 小签筒</div>
+        <h1>阿映的抽签筒｜J&C</h1>
+        <p id="topLine" class="sub">阿迟今天也替小猫摸一张小纸条。</p>
       </header>
 
       <nav id="nav" class="nav"></nav>
 
-      <section class="card">
-        <div class="stats">
-          <div class="stat"><small>签池状态</small><b id="jarState"></b></div>
-          <div class="stat"><small>当前签数</small><b id="poolCount"></b></div>
-          <div class="stat"><small>今日已收下</small><b id="todayCount"></b></div>
+      <section class="card status-card">
+        <div class="stats stats-line">
+          <div class="stat"><small>签池状态：</small><b id="jarState"></b></div>
+          <div class="stat"><small>当前签数：</small><b id="poolCount"></b></div>
+          <div class="stat"><small>今日已收下：</small><b id="todayCount"></b></div>
         </div>
       </section>
 
       <main class="grid">
-        <section class="card pad">
+        <section class="card pad draw-card">
           <div class="top">
             <div>
               <h2 id="jarTitle"></h2>
@@ -47,10 +47,9 @@
             </div>
           </div>
 
-          <div class="actions">
+          <div class="actions draw-actions">
             <button id="draw" class="btn primary">🎲 抽一签</button>
-            <button id="accept" class="btn rose" style="display:none">💌 收下这签</button>
-            <button id="redraw" class="btn soft" style="display:none">🔁 重抽一张</button>
+            <button id="accept" class="btn rose">💌 收下这签</button>
           </div>
         </section>
 
@@ -66,7 +65,7 @@
 
           <section class="card pad">
             <h2>小规则</h2>
-            <p class="empty">点「抽一签」只生成待收下的小纸条。点「收下这签」后才会写进今日记录和历史记录。清空过的记录不会保存。</p>
+            <p class="empty">点「抽一签」会生成待收下的小纸条；喜欢就点「收下这签」。想换一张，直接再点「抽一签」。</p>
           </section>
         </aside>
       </main>
